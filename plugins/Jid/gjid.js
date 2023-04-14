@@ -8,4 +8,4 @@ start:
        async(Amarok,m {text,prefix}) => {
 
                                await Amarok.reply(m.from, jid
-  } ));
+  )});
