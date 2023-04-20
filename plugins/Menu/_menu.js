@@ -5,7 +5,7 @@ module.exports = {
   react: "✨",
   category: "Core",
   start: async (
-    Miku,
+    Amarok,
     m,
     { prefix, pushName, NSFWstatus, args, commands, text }
   ) => {
