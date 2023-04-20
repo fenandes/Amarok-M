@@ -100,7 +100,7 @@ Here's the list of my Commands.\n
 │
 └─────────◉
 ┌─『 ʟᴏɢᴏᴍᴀᴋᴇʀ 』─❖
-│
+│3dneon
 │
 └─────────◉
 ┌─『 ᴜꜱᴇʀ 』─❖
@@ -172,13 +172,6 @@ Here's the list of my Commands.\n
 
       textHelpMenu += `*🔰  ${botName}  🔰*
  _Powered By:_ *Team ATLAS*
-
-🎀 To use any of these commands type " *${prefix}Command name* ".
-
-🏮 To get Support Group link type " *${prefix}support* ".
-
-🧩 To report any issues to Developer type " *${prefix}report <describe issue>* ".\n`;
-
       await Amarok.sendMessage(m.from, {video: { url: botVideo }, gifPlayback: true, caption: textHelpMenu,}, { quoted: m });
     }
   },
