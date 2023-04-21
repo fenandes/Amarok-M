@@ -97,7 +97,9 @@ const now = new Date();
 ┌─『 Economy 』─❖
 │slot
 │bank
-│
+│capacity 
+│withdraw 
+│rob
 └─────────◉
 ┌─『 Logomaker 』─❖
 │3dneon
