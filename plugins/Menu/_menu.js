@@ -92,7 +92,8 @@ const now = new Date();
 └─────────◉
 ┌─『 Search 』─❖
 │google
-│
+│github
+│anime 
 └─────────◉
 ┌─『 Economy 』─❖
 │slot
