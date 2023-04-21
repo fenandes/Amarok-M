@@ -75,7 +75,7 @@ Here's the list of my Commands.\n
 ┃ ✗ USER : ${pushName}
 ┃ ✗ VERSION : ${package.version}
 ┗━━━━━━━━━⦿
-┌─『 ᴄᴏɴᴠᴇʀᴛᴇʀ 』─❖
+┌─『 Converter 』─❖
 │
 │
 └─────────◉
@@ -91,7 +91,7 @@ Here's the list of my Commands.\n
 │
 │
 └─────────◉
-┌─『 ꜱᴇᴀʀᴄʜ 』─❖
+┌─『 Search 』─❖
 │
 │
 └─────────◉
@@ -99,9 +99,10 @@ Here's the list of my Commands.\n
 │
 │
 └─────────◉
-┌─『 ʟᴏɢᴏᴍᴀᴋᴇʀ 』─❖
+┌─『 Logomaker 』─❖
 │3dneon
-│
+│cloud 
+│neondevil
 └─────────◉
 ┌─『 ᴜꜱᴇʀ 』─❖
 │
