@@ -1,9 +1,9 @@
 module.exports = {
-  name: "help",
+  name: "menu",
   alias: ["menu", "h", "helpm", "helpmenu"],
   desc: "Gives all bot commands list",
-  react: "✨",
-  category: "Core",
+  react: "📑",
+  category: "Mics",
   start: async (
     Amarok,
     m,
@@ -32,8 +32,8 @@ module.exports = {
         );
       var buttonss = [
         {
-          buttonId: `${prefix}help`,
-          buttonText: { displayText: `help` },
+          buttonId: `${prefix}runtime`,
+          buttonText: { displayText: `RUNTIME` },
           type: 1,
         },
       ];
@@ -43,7 +43,7 @@ module.exports = {
         buttons: buttonss,
         headerType: 1,
       };
-      return Miku.sendMessage(m.from, buth, { quoted: m });
+      return Amarok.sendMessage(m.from, buth, { quoted: m });
     } else {
       const pad = (s) => (s < 10 ? "0" : "") + s;
         const formatTime = (seconds) => {
@@ -59,15 +59,14 @@ const now = new Date();
        let greeting;
 
         if (hour >= 0 && hour < 12) {
-          greeting = "Ohayou gozaimasu"; //good morning
+          greeting = "Ohayou gozaimasu";
         } else if (hour >= 12 && hour < 18) {
-          greeting = "Konnichiwa"; //good afternoon
+          greeting = "Goodafternoon"; 
         } else {
-          greeting = "Konbanwa"; //good evening
+          greeting = "Goodevening";
         }
-      let textHelpMenu = `${greeting} *${pushName}* Senpai,
+      let textHelpMenu = `
     
-Here's the list of my Commands.\n
 ┏━━⟪ ${botName} ⟫━⦿
 ┃ ✗ OWNER : ${config.OWNER_NAME}
 ┃ ✗ MODE : ${Config.WORKTYPE}
@@ -92,7 +91,7 @@ Here's the list of my Commands.\n
 │
 └─────────◉
 ┌─『 Search 』─❖
-│
+│google
 │
 └─────────◉
 ┌─『 ɢᴀᴍᴇs 』─❖
@@ -104,9 +103,10 @@ Here's the list of my Commands.\n
 │cloud 
 │neondevil
 └─────────◉
-┌─『 ᴜꜱᴇʀ 』─❖
-│
-│
+┌─『 Mics 』─❖
+│runtime 
+│ping
+│menu
 └─────────◉
 \n\n`;
 
