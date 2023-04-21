@@ -2,5 +2,3 @@
 <h1 align="center">ᴀᴍᴀʀᴏᴋ ᴍᴅ ʙᴏᴛ<br></h1>
 <p align="center">
 </p>
->UN FORGETTABLE MEMORIES
->OF ALEXA QUEEN 
