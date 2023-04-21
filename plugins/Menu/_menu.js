@@ -94,8 +94,9 @@ const now = new Date();
 │google
 │
 └─────────◉
-┌─『 ɢᴀᴍᴇs 』─❖
-│
+┌─『 Economy 』─❖
+│slot
+│bank
 │
 └─────────◉
 ┌─『 Logomaker 』─❖
