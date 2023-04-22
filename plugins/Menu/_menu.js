@@ -78,9 +78,12 @@ const now = new Date();
 │
 │
 └─────────◉
-┌─『 ᴍɪᴄs 』─❖
-│
-│
+┌─『 Group 』─❖
+│antilink 
+│kick
+│promote 
+│demote 
+│tagall
 └─────────◉
 ┌─『 ʜᴇʀᴏᴋᴜ 』─❖
 │
