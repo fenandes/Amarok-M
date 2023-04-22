@@ -1,3 +1,5 @@
+const { ak } = require("../../lib/db/dataschema.js");
+
 module.exports = {
   name: "promote",
   alias: ["prom"],
