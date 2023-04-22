@@ -71,7 +71,7 @@ const mongoose = require("mongoose");
 const Auth = require('./Processes/Auth');
 
 const readCommands = () => {
-    let dir = path.join(__dirname, "./Commands")
+    let dir = path.join(__dirname, "./plugins")
     let dirs = fs.readdirSync(dir)
     let cmdlist = {}
     try {
@@ -242,16 +242,7 @@ async function startAmarok() {
         }
     })
 
-    /** Send Button 5 Images
-     *
-     * @param {*} jid
-     * @param {*} text
-     * @param {*} footer
-     * @param {*} image
-     * @param [*] button
-     * @param {*} options
-     * @returns
-     */
+   
     Amarok.send5ButImg = async (jid, text = '', footer = '', img, but = [], thumb, options = {}) => {
         let message = await prepareWAMessageMedia({
             image: img,
