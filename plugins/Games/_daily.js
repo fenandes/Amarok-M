@@ -24,7 +24,7 @@ module.exports = {
       await Amarok.sendMessage(
         m.from,
         {
-          image: fs.readFileSync("./Assets/Img/card.png"),
+          image: fs.readFileSync("./lib/amarok/Img/card.png"),
           caption: `\n🧧 You already claimed your daily revenue today, Come back in ${daily.cdL} to claim again 🫡`,
         },
         { quoted: m }
