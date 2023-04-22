@@ -178,7 +178,7 @@ const now = new Date();
 
       textHelpMenu += `*🔰  ${botName}  🔰*
  _Powered By:_ *Team ATLAS*
-      await Amarok.sendMessage(m.from, {image: fs.readFileSync("./lib/amarok/amarok.png"), caption: textHelpMenu,}, { quoted: m });
+      await Amarok.sendMessage(m.from, {image: fs.readFileSync("./lib/amarok/amarok.jpg"), caption: textHelpMenu,}, { quoted: m });
     }
   },
 };
