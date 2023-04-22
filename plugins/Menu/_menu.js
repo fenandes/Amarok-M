@@ -84,6 +84,7 @@ const now = new Date();
 │promote 
 │demote 
 │tagall
+│leave 
 └─────────◉
 ┌─『 ʜᴇʀᴏᴋᴜ 』─❖
 │
