@@ -1,5 +1,5 @@
 require("./config.js");
-require('./lib/net.js');
+require("./lib/net.js");
 
 const pino = require('pino');
 const {
@@ -135,10 +135,15 @@ async function startAmarok() {
         logger: pino({
             level: 'silent'
         }),
-        printQRInTerminal: true,
-        browser: ['Amarok MD', 'Safari', '1.0.0'],
         auth: state,
-        version
+        printQRInTerminal: true,
+        browser: Browsers.macOS("Desktop"),
+        fireInitQueries: false,
+        shouldSyncHistoryMessage: false,
+        downloadHistory: false,
+        syncFullHistory: false,
+  });
+    
     })
 
     store.bind(Amarok.ev)
