@@ -49,7 +49,7 @@ module.exports = {
     await Amarok.sendMessage(
       m.from,
       {
-        image: fs.readFileSync("./Assets/Img/card.png"),
+        image: fs.readFileSync("./lib/amarok/Img/card.png"),
         caption: `*📠 Transaction successful of ${word} 💷*`,
       },
       { quoted: m }
