@@ -1,4 +1,6 @@
 const { ak } = require("../../lib/db/dataschema.js");
+require("../../config.js");
+require("../../lib/net.js");
 
 module.exports = {
   name: "promote",
@@ -131,7 +133,7 @@ module.exports = {
     desc: "Enable or disable the antilink feature in a group",
     category: "Group",
     usage: "antilink [on/off]",
-    react: "🔒",
+    react: "🚫",
     start: async (
       Amarok,
       m,
@@ -205,6 +207,52 @@ module.exports = {
         }
       } else {
         await Amarok.sendMessage(m.from, {image: {url : botImage6} ,caption: `\n*「 ANTILINK SYSTEM  」*\n\nNote: This will *delete* all links from groups and *remove* someone if they send any other *WhatsApp Group's Link*.\n\n*_Usage:_*\n\n*${prefix}antilink on*\n*${prefix}antilink off*\n\n*Current Status:* ${checkdata.antilink == "true" ? "On" : "Off"}`,}, { quoted: m });
+    }
+  },
+};
+
+//-------------[KICK USER]------
+
+module.exports = {
+  name: "kick",
+  alias: ["rem"],
+  desc: "Remove a member from group",
+  category: "Group",
+  usage: "remove @user",
+  react: "🕊",
+  start: async (
+    Amarok,
+    m,
+    { text, prefix, isBotAdmin, isAdmin, mentionByTag,pushName}
+  ) => {
+    if (!isAdmin) return m.reply(`Bot and *${pushName}* both must be admin in order to use this command !`);
+    if (!text && !m.quoted) return m.reply(`Please tag a user to *Remove* from group!`)
+
+    if (!text && !m.quoted) {
+      return Amarok.sendMessage(
+        m.from,
+        { text: `Please tag a user to *Remove* !` },
+        { quoted: m }
+      );
+    } else if (m.quoted) {
+      var mentionedUser = m.quoted.sender;
+    } else {
+      var mentionedUser = mentionByTag[0];
+    }
+
+    let users = (await mentionedUser) || m.msg.contextInfo.participant;
+
+    try {
+      await Amarok.groupParticipantsUpdate(m.from, [users], "remove").then(
+        (res) =>
+          Amarok.sendMessage(
+            m.from,
+            { text: `@${mentionedUser.split("@")[0]} has been *Removed* Successfully by *${pushName}*` },
+            { quoted: m }
+          )
+      );
+    } catch (err) {
+      Amarok.sendMessage(m.from, { text: `${mess.botadmin}` }, { quoted: m });
     }
   },
 };
