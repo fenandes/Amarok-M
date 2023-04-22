@@ -126,11 +126,11 @@ module.exports = {
 //--------------------[ANTILINK REMOVER]-----
 
 module.exports = {
-    name: "antilinkgc",
+    name: "antilink",
     alias: ["alinkgc","antilink"],
     desc: "Enable or disable the antilink feature in a group",
     category: "Group",
-    usage: "antilinkgc [on/off]",
+    usage: "antilink [on/off]",
     react: "🔒",
     start: async (
       Amarok,
