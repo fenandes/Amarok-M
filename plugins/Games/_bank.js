@@ -32,7 +32,7 @@ module.exports = {
     await Amarok.sendMessage(
       m.from,
       {
-        image: fs.readFileSync("./Assets/Img/card2.png"),
+        image: fs.readFileSync("./lib/amarok/Img/card2.png"),
         caption: `\n🏦 *${pushname}'s Bank*:\n\n🪙 Balance: ${balance.bank}/${balance.bankCapacity}\n\n\n*Wealth: ${role}*\n`,
       },
       { quoted: m }
