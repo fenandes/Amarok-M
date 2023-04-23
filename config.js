@@ -12,7 +12,7 @@ if (!gg) {
 
 global.owner = gg.split(",");
 global.mongodb = process.env.MONGODB || "mongodb+srv://fantox:xrto71r@cluster0.dnlowts.mongodb.net/?retryWrites=true&w=majority";
-global.sessionId = process.env.SESSION_ID || "ok";
+global.sessionId = process.env.SESSION_ID || "";
 global.prefa = process.env.PREFIX || "-";
 global.tenorApiKey =
   process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c";
