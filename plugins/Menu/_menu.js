@@ -117,7 +117,7 @@ const now = new Date();
 └─────────◉
 \n\n`;
       }
-      await Amarok.sendMessage(m.from, {image: fs.readFileSync("./lib/amarok/amarok.jpg"), caption: textHelpMenu,}, { quoted: m });
+      await Amarok.sendMessage(m.from, {image: fs.readFileSync("./lib/amarok/amarok.jpg")}, { quoted: m });
     }
   },
 };
