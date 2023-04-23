@@ -31,8 +31,12 @@
 - ✔️ | **Create Mongodb [Required]** 
 ---------
 
+## AMAROK MONGODB
+>Create mongodb url so you can be able to deploy the bot because mongodb is required, ```or just copy the mongodb that has already been created``` 
+-----------------
 
 ## ⚠ ALERT ⚠
 
 ```
 .IF YOU GET BANNED ON WHATSAPP  THAT'S MEANS, YOU MAY HAVE VIOLET THEIR PRIVACY POLICY,AND TO PREVENT THAT  PROBLEM  THE BOT IN SELF MODE.
+
