@@ -104,6 +104,7 @@ const now = new Date();
 │withdraw 
 │rob
 │daily 
+│dare
 └─────────◉
 ┌─『 Logomaker 』─❖
 │3dneon
