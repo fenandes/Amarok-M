@@ -6,7 +6,7 @@ module.exports = {
   desc: "give a dare",
   cool: 3,
   react: "😐",
-  category: "Fun",
+  category: "Economy",
   start: async (Amarok, m, { text, prefix }) => {
     const shibam = await axios.get(
       "https://dull-plum-panda-gear.cyclic.app/dare"
