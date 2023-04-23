@@ -3,16 +3,6 @@
 <p align="center">
 </p>
 
-
-## ```SCAN-QR```
-
- 
-> <b><s1>1.sᴄᴀɴ ǫʀ ᴄᴏᴅᴇ </b></s1> 
-
- <a href='https://fix-my.vercel.app/' target="_blank"><img alt='SCAN QR' src='https://img.shields.io/badge/Scan_qr-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
-
-> <b><s1> 3. ɴᴏᴡ ᴅᴇᴘʟᴏʏ</b></s1>
-    <br>
 ***
 ## ```HEROKU```
 
