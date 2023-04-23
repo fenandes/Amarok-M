@@ -25,12 +25,6 @@
 <a href='https://dashboard.heroku.com/new?button-url=https://github.com/Fenandes/Amarok-MD&template=https://github.com/Fenandes/Amarok-MD.git' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 ---------
 
-###  about this bot
-- ✔️ | **Simple** 
-- ✔️ | **MongoDb included** 
-- ✔️ | **Create Mongodb [Required]** 
----------
-
 ## AMAROK MONGODB
 >Create mongodb url so you can be able to deploy the bot because mongodb is required, ```or just copy the mongodb that has already been created``` 
 -----------------
