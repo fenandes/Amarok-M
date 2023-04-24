@@ -1,7 +1,29 @@
 <img src= "https://i.ibb.co/NNWV8Js/ca599eb9ff2b.jpg"/>
-<h1 align="center">ᴀᴍᴀʀᴏᴋ ᴍᴅ ʙᴏᴛ<br></h1>
+
+<h1 align="center">Amarok-MD</h1>
+
 <p align="center">
+    <strong>MULTI DEVICE WHATSAPP BOT BY DIEGO</strong>
 </p>
+
+<table align="center">
+    <tr>
+        <th>Name</th>
+        <th>Amarok MD</th>
+    </tr>
+    <tr>
+        <td>Version</td>
+        <td>2.0.0</td>
+    </tr>
+    <tr>
+        <td>macOS</td>
+        <td>Monterey</td>
+    </tr>
+    <tr>
+        <td>Owner</td>
+        <td>Diego</td>
+    </tr>
+</table
 
 ***
 ## ```HEROKU```
