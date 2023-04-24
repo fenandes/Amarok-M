@@ -3,7 +3,7 @@
 <h1 align="center">Amarok-MD</h1>
 
 <p align="center">
-    <strong>MULTI DEVICE WHATSAPP BOT BY DIEGO</strong>
+    <strong>MULTI DEVICE WHATSAPP BOT</strong>
 </p>
 
 <table align="center">
