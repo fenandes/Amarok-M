@@ -53,7 +53,7 @@ const {
 const qrcode = require('qrcode')
 const prefix = global.prefa;
 
-const welcomeLeft = require('./Processes/welcome.js');
+const welcomeLeft = require('./lib/group/welcome.js');
 const {
     Collection,
     Simple
@@ -68,7 +68,7 @@ const {
 } = require('./lib/color');
 Commands.prefix = prefa
 const mongoose = require("mongoose");
-const Auth = require('./Processes/Auth');
+const Auth = require('./lib/Auth');
 
 const readCommands = () => {
     let dir = path.join(__dirname, "./plugins")
