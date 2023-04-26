@@ -16,7 +16,7 @@ const {
     makeInMemoryStore,
     jidDecode,
     proto
-} = require("@fenandes/baileys");
+} = require("@adiwajshing/baileys");
 
 const fs = require("fs");
 const chalk = require("chalk");
