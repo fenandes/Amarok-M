@@ -124,10 +124,7 @@ async function startAmarok() {
     console.log(color('\nHello, I am Diegoson, the main developer of this bot.`, 'aqua'))
     console.log(color('\nYou can follow me on GitHub: Diegoson\n\n', 'aqua'))
 
-
-
-
-    let {
+let {
         version,
         isLatest
     } = await fetchLatestBaileysVersion()
@@ -135,14 +132,11 @@ async function startAmarok() {
         logger: pino({
             level: 'silent'
         }),
-        auth: state,
         printQRInTerminal: true,
-        browser: Browsers.macOS("Desktop"),
-        fireInitQueries: false,
-        shouldSyncHistoryMessage: false,
-        downloadHistory: false,
-        syncFullHistory: false,
-  });
+        browser: ['Amarok', 'Firefox', '2.0.0'],
+        auth: state,
+        version
+    })
     
     })
 
