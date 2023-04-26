@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/fenandes/Amarok-MD#readme",
   "dependencies": {
-    "@fenandes/baileys": "git+https://github.com/fenandes/Bailyes.git",
+    "@adiwajshing/baileys": "git+https://github.com/fenandes/Bailyes.git",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@adiwajshing/baileys": "^4.4.0",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
