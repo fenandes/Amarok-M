@@ -121,9 +121,11 @@ async function startAmarok() {
         whitespaceBreak: true
     }), 'yellow'))
 
-    console.log(color('\nHello, I am Diegoson, the main developer of this bot.`, 'aqua'))
-    console.log(color('\nYou can follow me on GitHub: Diegoson\n\n', 'aqua'))
+    console.log(color('\nYou can follow me on GitHub: fenandes\n\n', 'aqua'))
 
+
+    
+    
 let {
         version,
         isLatest
