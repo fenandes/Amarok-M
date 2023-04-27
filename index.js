@@ -139,8 +139,11 @@ let {
         auth: state,
         version
     })
-    
-    })
+   
+   
+   
+   
+  
 
     store.bind(Amarok.ev)
 
