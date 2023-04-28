@@ -1,4 +1,4 @@
-<img src= "https://i.ibb.co/NNWV8Js/ca599eb9ff2b.jpg"/>
+<img src= "https://i.ibb.co/hHhpfbF/fc6acf5a53b0.jpg"/>
 
 <h1 align="center">Amarok-MD</h1>
 
