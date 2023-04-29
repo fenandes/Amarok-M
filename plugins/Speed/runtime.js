@@ -6,6 +6,6 @@
  category: "Speed",
  start: async(Amarok,m, {text,prefix}) => {
 
- await Amarok.reply(runtime(process.uptime())
+ await Amarok.reply(runtime(process.uptime()))
  }
-);
+ }

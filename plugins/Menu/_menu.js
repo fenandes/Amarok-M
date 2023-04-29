@@ -120,5 +120,5 @@ const now = new Date();
       }
       await Amarok.sendMessage(m.from, {image: fs.readFileSync("./lib/amarok/amarok.jpg")}, { quoted: m });
     }
-  },
-};
+  }
+
