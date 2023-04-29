@@ -1,5 +1,5 @@
-require("./config.js");
-require("./lib/net.js");
+require('./lib/config.js');
+require('./lib/net.js');
 
 const pino = require('pino');
 const {
