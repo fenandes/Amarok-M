@@ -1,4 +1,4 @@
-const config = require('../../config');
+const config = require('../../lib/config');
 const eco = require('discord-mongoose-economy')
 const ty = eco.connect(config.mongodb);
 
