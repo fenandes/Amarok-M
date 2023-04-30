@@ -1,5 +1,5 @@
 const { ak } = require("../../lib/db/dataschema.js");
-require("../../config.js");
+require("../../lib/config.js");
 require("../../lib/net.js");
 
 module.exports = {
