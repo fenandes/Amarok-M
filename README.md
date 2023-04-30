@@ -39,7 +39,7 @@
 <a href='https://dashboard.heroku.com/new?button-url=https://github.com/Fenandes/Amarok-MD&template=https://github.com/Fenandes/Amarok-MD.git' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 ><b><s1>3.join support gc</b></s1>
-<a href="https://chat.whatsapp.com/EZGsVj9X66E2Mo9T75NHMy"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="140px">
+<a href="https://bit.ly/40L4sFi"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="140px">
 </a>
 </p>
 ---------
