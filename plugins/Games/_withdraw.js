@@ -35,7 +35,7 @@ module.exports = {
     Amarok.sendMessage(
       m.from,
       {
-        image: fs.readFileSync("./lib/amarok/Img/card3.png"),
+        image: fs.readFileSync("./lib/amarok/lmg/card3.png"),
         caption: `*🏧 ALERT*  _💶 ${withdraw.amount} has been added in your wallet._*`,
       },
       { quoted: m }
