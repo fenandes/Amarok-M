@@ -125,8 +125,8 @@ const now = new Date();
 └─────────◉
 \n\n`;
         const buttons = [
-  {buttonId: 'help', buttonText: {displayText: 'HELP'}, type: 1},
-  {buttonId: 'menu', buttonText: {displayText: 'MENU'}, type: 1}
+  {buttonId: 'help', buttonText: {displayText: `${process.env.PREFIX}help`}, type: 1},
+  {buttonId: 'menu', buttonText: {displayText: `${process.env.PREFIX}menu`}, type: 1}
             ]
         let buttonMessage = {
             image: { url: "https://raw.githubusercontent.com/fenandes/Amarok-MD/main/lib/amarok/lmg/amarok.jpg" },

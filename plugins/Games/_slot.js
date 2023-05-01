@@ -13,8 +13,8 @@ module.exports = {
         m, 
         { text, prefix} 
     ) => {
-      var today = new Date();
-      if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
+      
+      
           if (text == 'help') return m.reply(`*1:* Use ${prefix}slot to play\n\n*2:* You must have 🪙100 in your wallet\n\n*3:* If you don't have money in wallet then withdraw from your bank\n\n*4:* If you don't have money in your bank too then use economy features to gain money`)
           if (text == 'money') return m.reply(`*1:* Small Win --> +🪙20\n\n*2:* Small Lose --> -🪙20\n\n*3:* Big Win --> +🪙100\n\n*4:* Big Lose --> -🪙50\n\n*5:* 🎉 JackPot --> +🪙1000`)
           const fruit1= ["🥥", "🍎", "🍇"]
@@ -69,9 +69,7 @@ module.exports = {
           else { 
                   m.reply(`Do you understand what you are doing?`)
           }
-       }
-       else{
-                m.reply(`*You can only play this game during weekends*\n\n*🌿 Friday*\n*🎏 Saturday*\n*🎐 Sunday*`)
-         }
+       
+   
     }
 }

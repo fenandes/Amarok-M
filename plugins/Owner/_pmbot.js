@@ -10,7 +10,7 @@ module.exports = {
   start: async (
     Amarok,
     m,
-    { args, isBotAdmin, isAdmin, isCreator, reply, prefix, pushName, modStatus, botImage6 }
+    { args, isBotAdmin, isAdmin, isCreator, reply, prefix, pushName, modStatus }
   ) => {
     if (modStatus == "false" && !isCreator)
       return m.reply("Sorry, only my *Devs* and *Sudos* can use this command !");
@@ -74,7 +74,7 @@ module.exports = {
       }
     } else {
       let bmffg = {
-        image: { url: botImage6 },
+        image: { url: "https://repository-images.githubusercontent.com/467561890/fec40eb4-8eea-44f0-ad5e-772f45672f6a" },
         caption: `\n *「  PM Chatbot configuration  」*\n\n\nNote: This will enable chatbot in bot's PM. Bot will reply to all message in PM.\n\n*_Usage:_*\n\n*${prefix}pmchatbot on*\n*${prefix}pmchatbot off*\n\n*Current Status:* ${checkdata.PMchatBot == "true" ? "On" : "Off"}`,
 
       };

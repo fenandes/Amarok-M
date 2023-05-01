@@ -6,7 +6,7 @@ module.exports = {
   category: "Search",
   usage: `gh <github username>`,
   react: "🌲",
-  start: async (Amarok, m, { text, prefix, pushName, GhUserPP, args,mime }) => {
+  start: async (Amarok, m, { text, prefix, pushName, args,mime }) => {
     if (!args[0])
       return Amarok.sendMessage(
         m.from,
