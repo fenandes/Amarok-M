@@ -206,7 +206,8 @@ module.exports = {
           );
         }
       } else {
-        await Amarok.sendMessage(m.from, {image: {url : botImage6} ,caption: `\n*「 ANTILINK SYSTEM  」*\n\nNote: This will *delete* all links from groups and *remove* someone if they send any other *WhatsApp Group's Link*.\n\n*_Usage:_*\n\n*${prefix}antilink on*\n*${prefix}antilink off*\n\n*Current Status:* ${checkdata.antilink == "true" ? "On" : "Off"}`,}, { quoted: m });
+        let textLink = `\n*「 ANTILINK SYSTEM  」*\n\nNote: This will *delete* all links from groups and *remove* someone if they send any other *WhatsApp Group's Link*.\n\n*_Usage:_*\n\n*${prefix}antilink on*\n*${prefix}antilink off*\n\n*Current Status:* ${checkdata.antilink == "true" ? "On" : "Off"}`
+        await Amarok.sendMessage(m.from, {image: {url : "https://canvas-bridge02.tubitv.com/r-DSAxISGIPLQJpj3aBXMV9HjSE=/640x360/smart/img.adrise.tv/50b7da22-1909-4929-a11e-85ccc64e8a0d.jpg"} ,caption: textLink,}, { quoted: m });
     }
   },
 };

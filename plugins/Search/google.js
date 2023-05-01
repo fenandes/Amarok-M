@@ -1,4 +1,6 @@
-const googleit = require("google-it");
+const axios = require('axios')
+const Apikey = 'AIzaSyDMbI3nvmQUrfjoCJYLS69Lej1hSXQjnWI&cx=baf9bdb0c631236e5'
+
 
 module.exports = {
     name: "google",
@@ -7,29 +9,32 @@ module.exports = {
     category: "Search",
     usage: `google <search term>`,
     react: "💫",
-    start: async (Amarok, m, { text, prefix, args }) => {
-      if (!args[0])
-        return Amarok.sendMessage(
-          m.from,
-          { text: `Please provide a Search Term !` },
-          { quoted: m }
-        );
-      var googlesearchTerm = args.join(" ");
+    start: async (Amarok, m, {  prefix, args }) => {
+     
 
-        var googleSearch = await googleit({ query: googlesearchTerm })
+      
+      if (!args) return m.reply('Sorry you did not give any search term!')
+      const res = await axios
+          .get(`https://www.googleapis.com/customsearch/v1?q=${args}&key=${Apikey}`)
+          .catch((err) => {
+              return m.reply(err.toString())
+          })
+      if (res.data.items.length == 0) return reply('❌ Unable to find any result')
+      const results = res.data.items
 
-        let resText = ` 乂*GOGGLE SEARCH*\n\n_ ◦*SEARCH TITLE*:_ *${googlesearchTerm}*\n\n\n`
-
-        for(num=0; num<10; num++){
-            resText += `_◦*RUSULTS*:_ *${num+1}*\n\n_◦*TITLE*:_ *${googleSearch[num].title}*\n\n_◦*DESCRIPTION*:_ *${googleSearch[num].snippet}*\n\n_◦*LINK*:_ *${googleSearch[num].link}*\n\n\n`;
-        }
-
+      let text = `====GOOGLE SEARCH====\n\n`
+      for (const result of results) {
+          text += `*Title:* ${result.title}\n`
+          text += `*Description:* ${result.snippet}\n`
+          text += `🌐 *Link:* ${result.link}\n\n========================\n`
+      }
+    
       await Amarok.sendMessage(
         m.from,
         {
-          video: {url: 'https://media.tenor.com/3aaAzbTrTMwAAAPo/google-technology-company.mp4'},
+          video: {url: 'https://telegra.ph/file/5eeb5f2e061a07dd668af.mp4'},
           gifPlayback: true,
-          caption: resText,
+          caption: text,
         },
         { quoted: m }
       );

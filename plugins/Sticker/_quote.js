@@ -9,7 +9,7 @@ module.exports = {
   category: "Converter",
   usage: `q <Your line>`,
   react: "🎗",
-  start: async (Amarok, m, { text, prefix, args, pushName, botImage3 }) => {
+  start: async (Amarok, m, { text, prefix, args, pushName }) => {
     if (!args[0] && !m.quoted)
       return m.reply(`Please provide a text (Type or mention a message) !`)
       
@@ -17,14 +17,14 @@ module.exports = {
           try {
             userPfp = await Amarok.profilePictureUrl(m.quoted.sender, "image");
           } catch (e) {
-            userPfp = botImage3;
+            userPfp = "https://c4.wallpaperflare.com/wallpaper/765/775/653/typography-minimalism-errors-wallpaper-preview.jpg";
           }
         }
         else{
           try {
             userPfp = await Amarok.profilePictureUrl(m.sender, "image");
           } catch (e) {
-            userPfp = botImage3;
+            userPfp = "https://c4.wallpaperflare.com/wallpaper/765/775/653/typography-minimalism-errors-wallpaper-preview.jpg";
           }
         }
     
