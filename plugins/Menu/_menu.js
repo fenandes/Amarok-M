@@ -7,7 +7,7 @@ module.exports = {
   start: async (
     Amarok,
     m,
-    { prefix, pushName, NSFWstatus, args, commands, text }
+    { prefix, pushName, NSFWstatus, args, commands, text, botName }
   ) => {
     if (args[0]) {
       let data = [];
