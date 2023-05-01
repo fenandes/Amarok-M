@@ -7,7 +7,7 @@ module.exports = {
   cool: 3,
   react: "😐",
   category: "Economy",
-  start: async (Amarok, m, { text, prefix }) => {
+  start: async (Amarok, m, { text, prefix, botImage4 }) => {
     const shibam = await axios.get(
       "https://dull-plum-panda-gear.cyclic.app/dare"
     );
