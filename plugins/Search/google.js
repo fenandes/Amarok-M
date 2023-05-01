@@ -6,7 +6,7 @@ module.exports = {
     desc: "Search something in google",
     category: "Search",
     usage: `google <search term>`,
-    react: "🍁",
+    react: "💫",
     start: async (Amarok, m, { text, prefix, args }) => {
       if (!args[0])
         return Amarok.sendMessage(
@@ -18,10 +18,10 @@ module.exports = {
 
         var googleSearch = await googleit({ query: googlesearchTerm })
 
-        let resText = `  *『  ⚡️ Google Search Engine ⚡️  』*\n\n\n_🔍 Search Term:_ *${googlesearchTerm}*\n\n\n`
+        let resText = ` 乂*GOGGLE SEARCH*\n\n_ ◦*SEARCH TITLE*:_ *${googlesearchTerm}*\n\n\n`
 
         for(num=0; num<10; num++){
-            resText += `_📍 Result:_ *${num+1}*\n\n_🎀 Title:_ *${googleSearch[num].title}*\n\n_🔶 Description:_ *${googleSearch[num].snippet}*\n\n_🔷 Link:_ *${googleSearch[num].link}*\n\n\n`;
+            resText += `_◦*RUSULTS*:_ *${num+1}*\n\n_◦*TITLE*:_ *${googleSearch[num].title}*\n\n_◦*DESCRIPTION*:_ *${googleSearch[num].snippet}*\n\n_◦*LINK*:_ *${googleSearch[num].link}*\n\n\n`;
         }
 
       await Amarok.sendMessage(
