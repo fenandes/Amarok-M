@@ -27,7 +27,7 @@ module.exports = {
     await Amarok.sendMessage(
       m.from,
       {
-        image: { url: GhUserPP},
+        image: { url: GhUserPP, mimetype: "image/jpeg" },
         caption: resText,
       },
       { quoted: m }
