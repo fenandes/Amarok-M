@@ -1,5 +1,5 @@
 const maker = require('mumaker')
-
+const { botName } = require('../../lib/config.js');
 module.exports = {
     name: "neondevil",
     alias: ["ndevil","nd","neond"],
