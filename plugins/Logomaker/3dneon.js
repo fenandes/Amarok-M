@@ -1,4 +1,5 @@
 const maker = require('mumaker')
+const { botName } = require('../../lib/config.js');
 
 module.exports = {
     name: "3dneon",
