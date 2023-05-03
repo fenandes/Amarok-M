@@ -91,6 +91,7 @@ const now = new Date();
 │gcclose
 │gcopen
 │welcome
+│cmd
 └─────────◉
 ┌─『 Download 』─❖
 │song
@@ -129,7 +130,7 @@ const now = new Date();
   {buttonId: 'menu', buttonText: {displayText: `${process.env.PREFIX}menu`}, type: 1}
             ]
         let buttonMessage = {
-            image: { url: "https://raw.githubusercontent.com/fenandes/Amarok-MD/main/lib/amarok/lmg/amarok.jpg" },
+            image: { url: "https://raw.githubusercontent.com/fenandes/Amarok-MD/main/lib/amarok/lmg/amarok.png" },
             caption: textHelpMenu,
             buttons: buttons,
     headerType: 1,
