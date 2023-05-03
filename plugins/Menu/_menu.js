@@ -127,8 +127,8 @@ const now = new Date();
 └─────────◉
 \n\n`;
         const buttons = [
-  {buttonId: `${prefix}help`, buttonText: {displayText: 'help', type: 1},
-  {buttonId: `${prefix}menu`, buttonText: {displayText: 'menu', type: 1}
+  {buttonId: `${prefix}help`, buttonText: {displayText: 'help'}, type: 1},
+  {buttonId: `${prefix}menu`, buttonText: {displayText: 'menu'}, type: 1}
             ]
         let buttonMessage = {
             image: { url: "https://raw.githubusercontent.com/fenandes/Amarok-MD/main/lib/amarok/lmg/amarok.png" },
