@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { botName } = require('../../lib/config.js');
 
 module.exports = {
   name: "menu",
@@ -126,8 +127,8 @@ const now = new Date();
 └─────────◉
 \n\n`;
         const buttons = [
-  {buttonId: 'help', buttonText: {displayText: `${process.env.PREFIX}help`}, type: 1},
-  {buttonId: 'menu', buttonText: {displayText: `${process.env.PREFIX}menu`}, type: 1}
+  {buttonId: `${prefix}help`, buttonText: {displayText: 'help', type: 1},
+  {buttonId: `${prefix}menu`, buttonText: {displayText: 'menu', type: 1}
             ]
         let buttonMessage = {
             image: { url: "https://raw.githubusercontent.com/fenandes/Amarok-MD/main/lib/amarok/lmg/amarok.png" },
