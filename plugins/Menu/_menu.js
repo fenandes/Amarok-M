@@ -88,6 +88,9 @@ const now = new Date();
 │tagall
 │leave 
 │gclink
+│gcclose
+│gcopen
+│welcome
 └─────────◉
 ┌─『 Download 』─❖
 │song
@@ -95,9 +98,9 @@ const now = new Date();
 │tik 
 │lg
 └─────────◉
-┌─『 ɢʀᴏᴜᴘ 』─❖
-│
-│
+┌─『 Games 』─❖
+│truth 
+│dare
 └─────────◉
 ┌─『 Search 』─❖
 │google
@@ -111,7 +114,6 @@ const now = new Date();
 │withdraw 
 │rob
 │daily 
-│dare
 └─────────◉
 ┌─『 Logomaker 』─❖
 │3dneon
@@ -119,8 +121,6 @@ const now = new Date();
 │neondevil
 └─────────◉
 ┌─『 Mics 』─❖
-│runtime 
-│ping
 │menu
 └─────────◉
 \n\n`;
